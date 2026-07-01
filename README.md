@@ -78,4 +78,4 @@ For GitHub Pages, enable Pages from the repository settings and select the branc
 
 ## License
 
-This project is for personal portfolio use. Add a license file if you want to define reuse permissions.
+This project is for personal portfolio use.
