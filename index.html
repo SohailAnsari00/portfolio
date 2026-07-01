@@ -17,8 +17,13 @@
   <div class="cursor-ring" id="cursor-ring"></div>
 
   <nav>
-    <div class="nav-logo">SA.DATA</div>
-    <ul class="nav-links">
+    <div class="nav-left">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-logo">SA.DATA</div>
+    </div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -29,7 +34,7 @@
       <div class="status">
         <div class="status-dot"></div>open to opportunities
       </div>
-      <a href="resume.pdf" download class="resume-btn">
+      <a href="sohail_ansari_resume.pdf" download class="resume-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -44,7 +49,16 @@
   <section id="hero">
     <div class="hero-grid-bg"></div>
     <div class="hero-content">
-      <div class="hero-eyebrow">// Data Analytics · AI/ML Engineering · GATE 2025 Qualified (DA)</div>
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-track">
+          <span>Data Analytics</span>
+          <span>AI/ML Engineering</span>
+          <span>GATE 2025 Qualified (DA)</span>
+          <span aria-hidden="true">Data Analytics</span>
+          <span aria-hidden="true">AI/ML Engineering</span>
+          <span aria-hidden="true">GATE 2025 Qualified (DA)</span>
+        </div>
+      </div>
       <h1 class="hero-name">SOHAIL<br><span>ANSARI</span></h1>
       <div class="hero-title">Where Data Meets Intelligence</div>
       <p class="hero-desc">CS graduate specialised in AI & ML, with a growing focus on data analytics and data
@@ -168,20 +182,21 @@
     <div class="projects-grid">
 
       <div class="project-card reveal">
-        <div class="project-num">Project 001 · Jan 2026 – Present</div>
+        <div class="project-num">Project 01 · Nov 2024</div>
         <div class="project-arrow">↗</div>
-        <div class="project-name">Sales Intelligence & Forecasting Platform</div>
-        <div class="project-desc">Scalable ETL pipeline integrating multiple sales sources into a PostgreSQL warehouse,
-          with Power BI KPI dashboards and ML models targeting 20–30% improvement in forecast accuracy.</div>
+        <div class="project-name">Energy Consumption Analysis</div>
+        <div class="project-desc">Interactive Power BI dashboards visualising gas, electricity, and water consumption
+          across buildings and cities. Predictive modelling uncovered patterns to identify energy efficiency
+          opportunities.</div>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span
-            class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">ETL</span>
+          <span class="tag">Power BI</span><span class="tag">Data visualization</span><span class="tag">KPIs</span><span
+            class="tag">Predictive Modelling</span>
         </div>
         <a href="https://github.com/SohailAnsari00" class="project-link" target="_blank">View on GitHub →</a>
       </div>
 
       <div class="project-card reveal">
-        <div class="project-num">Project 002 · Dec 2024 – Jan 2025</div>
+        <div class="project-num">Project 02 · Dec 2024 – Jan 2025</div>
         <div class="project-arrow">↗</div>
         <div class="project-name">LUNA — AI Chatbot</div>
         <div class="project-desc">Logical User-friendly Notion Assistant — NLP chatbot using Logistic Regression for
@@ -195,7 +210,7 @@
       </div>
 
       <div class="project-card reveal">
-        <div class="project-num">Project 003 · Apr – May 2025</div>
+        <div class="project-num">Project 03 · Apr – May 2025</div>
         <div class="project-arrow">↗</div>
         <div class="project-name">PulseFeed — News Aggregator</div>
         <div class="project-desc">Responsive news aggregation platform integrating third-party REST APIs to deliver
@@ -208,15 +223,14 @@
       </div>
 
       <div class="project-card reveal">
-        <div class="project-num">Project 004 · Nov 2024</div>
+        <div class="project-num">Project 04 · Jan 2026 – Present</div>
         <div class="project-arrow">↗</div>
-        <div class="project-name">Energy Consumption Analysis</div>
-        <div class="project-desc">Interactive Power BI dashboards visualising gas, electricity, and water consumption
-          across buildings and cities. Predictive modelling uncovered patterns to identify energy efficiency
-          opportunities.</div>
+        <div class="project-name">Sales Intelligence & Forecasting Platform</div>
+        <div class="project-desc">Scalable ETL pipeline integrating multiple sales sources into a PostgreSQL warehouse,
+          with Power BI KPI dashboards and ML models targeting 20–30% improvement in forecast accuracy.</div>
         <div class="project-tags">
-          <span class="tag">Power BI</span><span class="tag">Data Viz</span><span class="tag">KPIs</span><span
-            class="tag">Predictive Modelling</span>
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span
+            class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">ETL</span>
         </div>
         <a href="https://github.com/SohailAnsari00" class="project-link" target="_blank">View on GitHub →</a>
       </div>
@@ -232,14 +246,23 @@
     </div>
     <div class="skills-layout">
       <div class="skills-intro reveal">
-        // A mix of AI/ML, data<br>
+        <p class="desktop-text">
+        • A mix of AI/ML, data<br>
         engineering, and analytics<br>
         — backed by full-stack<br>
         development.<br><br>
-        I build across the stack —<br>
+        • I build across the stack —<br>
         from ETL pipelines<br>
         to BI dashboards<br>
         to deployed ML models.
+        </p>
+        <p class="mobile-text">
+        • A mix of AI/ML, data engineering, and analytics.<br>
+        — backed by full-stack development.<br><br>
+        • I build across the stack — from ETL pipelines to BI dashboards And<br>
+        — deployed ML models.
+        </p>
+        
       </div>
       <div class="skills-grid reveal">
         <div class="skill-group">
@@ -409,26 +432,31 @@
       <span class="section-line"></span>
     </div>
     <div class="cert-grid reveal">
+
       <div class="cert-card">
-        <div class="cert-icon">// GATE 2025</div>
-        <div class="cert-name">Data Science & Artificial Intelligence (DA)</div>
-        <div class="cert-issuer">Qualified — Strong proficiency in analytics, statistics & ML</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">// UDEMY · 2022</div>
+        <div class="cert-icon"> → UDEMY · 2022</div>
         <div class="cert-name">The Complete Web Development Bootcamp</div>
         <div class="cert-issuer">HTML · CSS · JS · React · Node.js · MongoDB</div>
       </div>
+
       <div class="cert-card">
-        <div class="cert-icon">// COURSERA · 2024</div>
-        <div class="cert-name">Data Science Specialization</div>
-        <div class="cert-issuer">Analysis · Visualization · Feature Engineering · ML</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">// GBPIET · 2023–24</div>
+        <div class="cert-icon"> → GBPIET · 2023–24</div>
         <div class="cert-name">Branch Coordinator, Student Activity Cell</div>
         <div class="cert-issuer">Leadership · Seminars · Cultural Festivals · Outreach</div>
       </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"> → COURSERA · 2024</div>
+        <div class="cert-name">Data Science Specialization</div>
+        <div class="cert-issuer">Analysis · Visualization · Feature Engineering · ML</div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"> → GATE 2025</div>
+        <div class="cert-name">Data Science & Artificial Intelligence (DA)</div>
+        <div class="cert-issuer">Qualified — Strong proficiency in analytics, statistics & ML</div>
+      </div>
+
     </div>
   </section>
 
@@ -463,8 +491,8 @@
         </a>
       </div>
       <p class="contact-note reveal">
-        // Open to full-time roles in Full-Stack Development, Data Engineering, or AI/ML.<br>
-        // Based in Dehradun, India — open to remote and relocation.
+        • Open to full-time roles in Full-Stack Development, Data Engineering, or AI/ML.<br>
+        • Based in Dehradun, India — open to remote and relocation.
       </p>
     </div>
   </section>
@@ -496,6 +524,19 @@
       });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navToggle.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
   </script>
 </body>
 
